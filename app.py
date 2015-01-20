@@ -30,7 +30,7 @@ class RoomHandler(RequestHandler):
 class UploadHandler(RequestHandler):
 
     def get(self):
-        self.render("upload.html")
+        self.render('upload.html')
 
     def post(self):
         upload = self.request.files['file'][0]
